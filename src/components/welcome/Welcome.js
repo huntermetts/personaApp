@@ -40,6 +40,8 @@ export default class Welcome extends Component{
         <img className = "Cloud2" src = {Cloud} alt = "cloud Image" />
         <img className = "Cloud3" src = {Cloud} alt = "cloud Image" />
         <img className = "Cloud4" src = {Cloud} alt = "cloud Image" />
+        <img className = "Cloud5" src = {Cloud} alt = "cloud Image" />
+
       </>
     )
 
