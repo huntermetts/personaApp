@@ -3,6 +3,19 @@ import React, { Component } from "react";
 
 export default class ApplicationViews extends Component {
 
+  state = {
+    typeOne = 0,
+    typeTwo = 0,
+    typeThree = 0,
+    typeFour = 0,
+    typeFive = 0,
+    typeSix = 0,
+    typeSeven= 0,
+    typeEight = 0,
+    typeNine = 0,
+    userName = ''
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -10,31 +23,9 @@ export default class ApplicationViews extends Component {
         <Route
           exact path="/" render={props => {
             return null
-            // Remove null and return the component which will show news articles
           }}
         />
 
-        <Route
-          path="/friends" render={props => {
-            return null
-            // Remove null and return the component which will show list of friends
-          }}
-        />
-
-        <Route
-          path="/messages" render={props => {
-            return null
-            // Remove null and return the component which will show the messages
-          }}
-        />
-
-        <Route
-          path="/tasks" render={props => {
-            return null
-            // Remove null and return the component which will show the user's tasks
-          }}
-        />
-        
       </React.Fragment>
     );
   }
