@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+.personaLink{
+    color:black;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    padding-top:25px;
+    margin-right: 5000px;
+}
+
+
+/* Iphone */
+@media only screen
+and (min-device-width:375px)
+and (max-device-width:667px){
+
+    .personaLink{
+        margin-right: 500px;
+    }
+}
+
+
+/* Ipad */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1){
+    .personaLink{
+        margin-right: 550px;
+    }
+}
