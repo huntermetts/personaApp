@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+
+.welcomePersona{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.welcomePersonaSummary{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.backgroundContainer{
+    background-color:#F4F1E8;
+    padding:100px;
+    margin:0 auto;
+    width:70%;
+    margin-top:50px;
+    color:#978C82;
+    border-radius: 15px;
+}
+
+.welcomeButton{
+    background-color:white;
+}
+
+.stepOneButtonContainer{
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+}
+
+.stepOneButtonContainer:hover{
+    opacity: .6;
+    transition: .25s;
+}
+
+.enterName{
+    padding-top:25px;
+}
