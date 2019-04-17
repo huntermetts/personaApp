@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
+import Cloud from '../assets/Clouds.png'
 import { Progress } from 'reactstrap';
 import "./Welcome.css";
-
-
 export default class Welcome extends Component{
-    render () {
-        return (
-            <React.Fragment>
-                <div className="backgroundContainer">
+  render(){
+    return(
+      <>
+          <div className="backgroundContainer">
             <div className="">
                 <h2 className="welcomePersona font-weight-bold">Welcome to Persona!</h2>
                 <h4 className="welcomePersonaSummary headerDesc">A new way to take the enneagram test.</h4>
@@ -36,8 +35,14 @@ export default class Welcome extends Component{
                         </div>
                     </div> */}
                 </div>
-                </div>
-            </React.Fragment>
-        )
-    }
+            </div>
+            <img className = "Cloud" src = {Cloud} alt = "cloud Image" />
+            <img className = "Cloud2" src = {Cloud} alt = "cloud Image" />
+            <img className = "Cloud3" src = {Cloud} alt = "cloud Image" />
+            <img className = "Cloud4" src = {Cloud} alt = "cloud Image" />
+            <img className = "Cloud5" src = {Cloud} alt = "cloud Image" />
+      </>
+    )
+
+  }
 }
