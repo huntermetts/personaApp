@@ -5,12 +5,8 @@ import "./Welcome.css";
 export default class Welcome extends Component{
 
     logUserName = () => {
-        alert(`The Current User is ${this.props.userName}`)
-    }
-
-    
-
-
+        console.log(this.props.userName)
+      }
     render(){
         return(
         <>

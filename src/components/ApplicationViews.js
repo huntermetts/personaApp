@@ -14,10 +14,10 @@ export default class ApplicationViews extends Component {
     stateToChange[evt.target.id] = evt.target.value
     this.setState(stateToChange)
     console.log(stateToChange)
-    
-    this.setState({
-        userName: stateToChange
-    })
+}
+
+logUserName = () => {
+  console.log(this.state.userName)
 }
 
   render() {
@@ -27,7 +27,8 @@ export default class ApplicationViews extends Component {
         <Route
           exact path="/" render={props => {
             return <Welcome {...props}
-                    username = {this.state.userName}
+                    handleFieldChange = {this.handleFieldChange}
+                    logUserName = {this.logUserName}
                   />
           }}
         />
