@@ -5,17 +5,20 @@ import Welcome from "./welcome/Welcome";
 export default class ApplicationViews extends Component {
 
   state = {
-    typeOne: 0,
-    typeTwo:0,
-    typeThree: 0,
-    typeFour: 0,
-    typeFive: 0,
-    typeSix: 0,
-    typeSeve: 0,
-    typeEight: 0,
-    typeNine: 0,
-    userName: ''
+    userName: ""
   }
+
+  handleFieldChange = evt => {
+    evt.preventDefault()
+    const stateToChange = {}
+    stateToChange[evt.target.id] = evt.target.value
+    this.setState(stateToChange)
+    console.log(stateToChange)
+    
+    this.setState({
+        userName: stateToChange
+    })
+}
 
   render() {
     return (
@@ -24,6 +27,7 @@ export default class ApplicationViews extends Component {
         <Route
           exact path="/" render={props => {
             return <Welcome {...props}
+                    username = {this.state.userName}
                   />
           }}
         />

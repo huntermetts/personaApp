@@ -4,25 +4,8 @@ import { Progress } from 'reactstrap';
 import "./Welcome.css";
 export default class Welcome extends Component{
 
-    state  = {
-        userName:""
-    }
-
-    handleFieldChange = evt => {
-        evt.preventDefault()
-        const stateToChange = {}
-        stateToChange[evt.target.id] = evt.target.value
-        this.setState(stateToChange)
-        console.log(stateToChange)
-        
-        this.setState({
-            userName:stateToChange
-        })
-    }
-
-    logUserName = evt => {
-       
-        console.log(this.state.userName)
+    logUserName = () => {
+        alert(`The Current User is ${this.props.userName}`)
     }
 
     
@@ -42,7 +25,7 @@ export default class Welcome extends Component{
 
                                 <div className="col">
                                     <label htmlFor="name" className="enterName">Enter your name to get started.</label>
-                                    <input type="text" required={true} onChange={this.handleFieldChange} className="form-control" id="name"placeholder="First Name"></input>
+                                    <input type="text" required={true} onChange={this.props.handleFieldChange} className="form-control" id="userName" placeholder="First Name"></input>
 
                                 </div>
 
