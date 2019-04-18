@@ -157,5 +157,71 @@
 /* Ipad */
 @media(max-device-width : 768px)
 {
+    .welcomePersona{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 25px;
+    }
 
+    .welcomePersonaSummary{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 15px;
+    }
+
+    .backgroundContainer{
+        background-color:#F4F1E8;
+        padding: 45px;
+        margin:0 auto;
+        width:85%;
+        margin-top:50px;
+        color:#978C82;
+        border-radius: 15px;
+        box-shadow:2px 4px 12px 2px lightgray;
+        z-index:1;
+    }
+
+    .welcomeButton{
+        background-color:white;
+    }
+
+    .stepOneButtonContainer{
+        display: flex;
+        justify-content: center;
+        margin-top:20px;
+    }
+
+    .enterName{
+        padding-top:15px;
+    }
+
+    .Cloud{
+        position: absolute;
+        top:-5%;
+        left:37%;
+        z-index: -1;
+    }
+    .Cloud2{
+        position: absolute;
+        left:-8%;
+        top:50%;
+        z-index: -1;
+    }
+    .Cloud3{
+        position: absolute;
+        right:0%;
+        top:70%;
+        z-index: -1;
+    }
+    .Cloud4{
+        position: absolute;
+        top:35%;
+        right:-10%;
+        z-index: -1;
+    }
+    .Cloud5{
+        visibility:hidden;
+        position: absolute;
+        top:69%;
+        left:23%;
+        z-index: -1;
+    }
 }
