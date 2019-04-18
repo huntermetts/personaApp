@@ -1,31 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
-.personaLink{
-    color:black;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 30px;
-    padding-top:25px;
-    margin-right: 900px;
-}
-
-
-/* Iphone */
-@media only screen
-and (min-device-width:375px)
-and (max-device-width:667px){
+/* Desktop */
+@media (min-width: 992px) {
 
     .personaLink{
-        margin-right: 500px;
+        color:black;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 30px;
+        padding-top:25px;
+        margin-left: -310px;
+    }
+
+    .personaLink:hover{
+        color:black;
+        opacity: .5;
+        transition: .3s;
     }
 }
 
+/* ______________________________________ */
+/* Iphone */
+@media (min-device-width:320px)
+{
+    .personaLink{
+        margin-right: 500px;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 25px;
+        padding-top:25px;
+        color:black;
+    }
+}
 
+/* ______________________________________ */
 /* Ipad */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
-and (-webkit-min-device-pixel-ratio: 1){
+@media(min-device-width : 768px)
+{
     .personaLink{
         margin-right: 550px;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 30px;
+        padding-top:25px;
+        color:black;
     }
 }

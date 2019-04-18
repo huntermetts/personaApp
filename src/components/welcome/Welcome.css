@@ -1,74 +1,161 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
-*{
-    box-shadow: border-box;
-}
-.welcomePersona{
-    font-family: 'Quicksand', sans-serif;
+/* Desktop */
+@media (min-width: 992px) {
+
+    *{
+        box-shadow: border-box;
+    }
+    .welcomePersona{
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .welcomePersonaSummary{
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    .backgroundContainer{
+        background-color:#F4F1E8;
+        padding:100px;
+        margin:0 auto;
+        width:70%;
+        margin-top:50px;
+        color:#978C82;
+        border-radius: 15px;
+        box-shadow:2px 4px 12px 2px lightgray;
+        z-index:1;
+    }
+
+    .welcomeButton{
+        background-color:white;
+    }
+
+    .stepOneButtonContainer{
+        display: flex;
+        justify-content: center;
+        margin-top:50px;
+    }
+
+    .stepOneButtonContainer:hover{
+        opacity: .6;
+        transition: .25s;
+    }
+
+    .enterName{
+        padding-top:25px;
+    }
+
+    .Cloud{
+        position: absolute;
+        top:-10%;
+        left:25%;
+        z-index: -1;
+    }
+    .Cloud2{
+        position: absolute;
+        left:-8%;
+        top:35%;
+        z-index: -1;
+    }
+    .Cloud3{
+        position: absolute;
+        right:2%;
+        top:0%;
+        z-index: -1;
+    }
+    .Cloud4{
+        position: absolute;
+        top:80%;
+        right:20%;
+        z-index: -1;
+    }
+    .Cloud5{
+        position: absolute;
+        top:69%;
+        left:23%;
+        z-index: -1;
+    }
 }
 
-.welcomePersonaSummary{
-    font-family: 'Quicksand', sans-serif;
+/* ______________________________________ */
+/* Iphone */
+@media (max-device-width:414px)
+{
+    .welcomePersona{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 25px;
+    }
+
+    .welcomePersonaSummary{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 15px;
+    }
+
+    .backgroundContainer{
+        background-color:#F4F1E8;
+        padding: 35px;
+        margin:0 auto;
+        width:85%;
+        margin-top:50px;
+        color:#978C82;
+        border-radius: 15px;
+        box-shadow:2px 4px 12px 2px lightgray;
+        z-index:1;
+    }
+
+    .welcomeButton{
+        background-color:white;
+    }
+
+    .stepOneButtonContainer{
+        display: flex;
+        justify-content: center;
+        margin-top:20px;
+    }
+
+    .enterName{
+        padding-top:15px;
+    }
+
+    .Cloud{
+        position: absolute;
+        top:-5%;
+        left:37%;
+        z-index: -1;
+    }
+    .Cloud2{
+        position: absolute;
+        left:-8%;
+        top:50%;
+        z-index: -1;
+    }
+    .Cloud3{
+        position: absolute;
+        right:0%;
+        top:70%;
+        z-index: -1;
+    }
+    .Cloud4{
+        visibility:hidden;
+        position: absolute;
+        top:80%;
+        right:20%;
+        z-index: -1;
+    }
+    .Cloud5{
+        visibility:hidden;
+        position: absolute;
+        top:69%;
+        left:23%;
+        z-index: -1;
+    }
+
+
 }
 
-.backgroundContainer{
-    background-color:#F4F1E8;
-    padding:100px;
-    margin:0 auto;
-    width:70%;
-    margin-top:50px;
-    color:#978C82;
-    border-radius: 15px;
-    box-shadow:2px 4px 12px 2px lightgray;
-    z-index:1;
-}
+/* ______________________________________ */
+/* Ipad */
+@media(max-device-width : 768px)
+{
 
-.welcomeButton{
-    background-color:white;
-}
-
-.stepOneButtonContainer{
-    display: flex;
-    justify-content: center;
-    margin-top:50px;
-}
-
-.stepOneButtonContainer:hover{
-    opacity: .6;
-    transition: .25s;
-}
-
-.enterName{
-    padding-top:25px;
-}
-
-.Cloud{
-    position: absolute;
-    top:-10%;
-    left:25%;
-    z-index: -1;
-}
-.Cloud2{
-    position: absolute;
-    left:-8%;
-    top:35%;
-    z-index: -1;
-}
-.Cloud3{
-    position: absolute;
-    right:2%;
-    top:0%;
-    z-index: -1;
-}
-.Cloud4{
-    position: absolute;
-    top:80%;
-    right:20%;
-    z-index: -1;
-}
-.Cloud5{
-    position: absolute;
-    top:69%;
-    left:23%;
-    z-index: -1;
 }
