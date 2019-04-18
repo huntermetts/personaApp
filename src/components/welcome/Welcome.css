@@ -59,11 +59,12 @@
 }
 .Cloud4{
     position: absolute;
-    top:75%;
+    top:80%;
     right:20%;
 }
 .Cloud5{
     position: absolute;
-    top:70%;
+    top:69%;
     left:23%;
+    z-index: -1;
 }
