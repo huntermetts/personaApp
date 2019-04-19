@@ -36,11 +36,11 @@ export default class Welcome extends Component{
                         </div> */}
                     </div>
                 </div>
-                <img className = "Cloud" src = {Cloud} alt = "cloud Image" />
-                <img className = "Cloud2" src = {Cloud} alt = "cloud Image" />
-                <img className = "Cloud3" src = {Cloud} alt = "cloud Image" />
-                <img className = "Cloud4" src = {Cloud} alt = "cloud Image" />
-                <img className = "Cloud5" src = {Cloud} alt = "cloud Image" />
+                <img className = "Cloud" src = {Cloud} alt = "cloud" />
+                <img className = "Cloud2" src = {Cloud} alt = "cloud" />
+                <img className = "Cloud3" src = {Cloud} alt = "cloud" />
+                <img className = "Cloud4" src = {Cloud} alt = "cloud" />
+                <img className = "Cloud5" src = {Cloud} alt = "cloud" />
         </>
         )
 

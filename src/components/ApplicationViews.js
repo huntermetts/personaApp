@@ -18,10 +18,8 @@ export default class ApplicationViews extends Component {
 
   //Captures state and console.log to confirm state is being set
   logUserName = () => {
-    console.log(this.state.userName)
+    alert(`The user's name is ${this.state.userName}`)
   }
-
-
 
   render() {
     return (
