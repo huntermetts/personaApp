@@ -4,9 +4,6 @@ import { Progress } from 'reactstrap';
 import "./Welcome.css";
 export default class Welcome extends Component{
 
-    logUserName = () => {
-        console.log(this.props.userName)
-      }
     render(){
         return(
         <>
@@ -29,7 +26,7 @@ export default class Welcome extends Component{
                         </form>
 
                         <div className="stepOneButtonContainer">
-                            <button id = "WelcomeButton" type="button" className="btn text-dark welcomeButton" onClick={() => this.logUserName()}>Let's go!</button>
+                            <button id = "WelcomeButton" type="button" className="btn text-dark welcomeButton" onClick={() => this.props.logUserName()}>Let's go!</button>
                         </div>
 
                         {/* <div  className="centerProgress">

@@ -7,18 +7,21 @@ export default class ApplicationViews extends Component {
   state = {
     userName: ""
   }
-
+  //Field Change to get users name before taking the test
   handleFieldChange = evt => {
     evt.preventDefault()
     const stateToChange = {}
     stateToChange[evt.target.id] = evt.target.value
     this.setState(stateToChange)
     console.log(stateToChange)
-}
+  }
 
-logUserName = () => {
-  console.log(this.state.userName)
-}
+  //Captures state and console.log to confirm state is being set
+  logUserName = () => {
+    console.log(this.state.userName)
+  }
+
+
 
   render() {
     return (
