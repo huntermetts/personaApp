@@ -5,16 +5,20 @@ import Welcome from "./welcome/Welcome";
 export default class ApplicationViews extends Component {
 
   state = {
-    typeOne: 0,
-    typeTwo:0,
-    typeThree: 0,
-    typeFour: 0,
-    typeFive: 0,
-    typeSix: 0,
-    typeSeve: 0,
-    typeEight: 0,
-    typeNine: 0,
-    userName: ''
+    userName: ""
+  }
+  //Field Change to get users name before taking the test
+  handleFieldChange = evt => {
+    evt.preventDefault()
+    const stateToChange = {}
+    stateToChange[evt.target.id] = evt.target.value
+    this.setState(stateToChange)
+    console.log(stateToChange)
+  }
+
+  //Captures state and console.log to confirm state is being set
+  logUserName = () => {
+    alert(`The user's name is ${this.state.userName}`)
   }
 
   render() {
@@ -24,6 +28,8 @@ export default class ApplicationViews extends Component {
         <Route
           exact path="/" render={props => {
             return <Welcome {...props}
+                    handleFieldChange = {this.handleFieldChange}
+                    logUserName = {this.logUserName}
                   />
           }}
         />
