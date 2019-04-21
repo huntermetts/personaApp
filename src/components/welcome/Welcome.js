@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
 import Cloud from '../assets/Clouds.png'
-import { Progress } from 'reactstrap';
 import "./Welcome.css";
 export default class Welcome extends Component{
+
+    pushToSummaryPage = () => {
+        this.props.history.push("/summary")
+        // this.props.logUserName()
+      }
 
     render(){
         return(
@@ -26,7 +30,7 @@ export default class Welcome extends Component{
                         </form>
 
                         <div className="stepOneButtonContainer">
-                            <button id = "WelcomeButton" type="button" className="btn text-dark welcomeButton" onClick={() => this.props.logUserName()}>Let's go!</button>
+                            <button id = "WelcomeButton" type="button" className="btn text-dark welcomeButton" onClick={() => this.pushToSummaryPage()}>Let's go!</button>
                         </div>
 
                         {/* <div  className="centerProgress">

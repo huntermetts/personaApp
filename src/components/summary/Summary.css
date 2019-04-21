@@ -1,0 +1,23 @@
+.summaryPersonaSummary{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.personalLinks{
+    text-align: center;
+    color:#978C82;
+    margin:30px;
+    font-size: 10px;
+
+}
+
+.personalLinks:hover{
+    color:black;
+    text-decoration: none;
+}
+
+.centerLinks{
+    display: flex;
+    justify-content: left;
+}
