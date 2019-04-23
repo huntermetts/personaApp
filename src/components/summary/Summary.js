@@ -38,7 +38,7 @@ export default class Summary extends Component{
 
                 <div className="centerLinks">
                        <a href="https://venmo.com/Hunter-Metts" className="personalLinks">Hunter Metts Venmo</a>
-                       <a href="#" className="personalLinks">Jordan Rosas Venmo</a>
+                       <a href="https://venmo.com/Jordan-Rosas-3" className="personalLinks">Jordan Rosas Venmo</a>
                        <a href="https://github.com/huntermetts/personaApp" className="personalLinks">Project Code</a>
                 </div>
         </>
