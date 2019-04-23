@@ -1,3 +1,8 @@
+Modal{
+    font-family: 'Quicksand', sans-serif;
+}
+
+
 .questions{
     margin-top:30px;
 }
@@ -10,4 +15,23 @@
 .progressBar{
     margin-top:85px;
     margin-bottom: -60px;
+}
+
+.modalButtonCenter{
+    display: flex;
+    justify-content: center;
+}
+
+.modalBody{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    line-height: 32px;
+}
+
+.modalPersona{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 4px;
 }

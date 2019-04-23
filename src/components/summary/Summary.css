@@ -21,3 +21,7 @@
     display: flex;
     justify-content: left;
 }
+
+.modalButton{
+    text-align: center;
+}

@@ -2,11 +2,30 @@ import React, { Component } from 'react'
 import Cloud from '../assets/Clouds.png'
 import { Progress } from 'reactstrap';
 import "./Summary.css";
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 export default class Summary extends Component{
+    // Set initial state
+    constructor(props) {
+        super(props);
+    this.state = {
+        modal: false
+    }
+        this.toggle = this.toggle.bind(this);
+    }
+
+
+
+    toggle() {
+        this.setState(prevState => ({
+            modal: !prevState.modal
+        }));
+    }
 
     pushToPageOne = () => {
-        this.props.history.push("/pageOne")
+        // this.props.history.push("/pageOne")
+        this.toggle();
     }
+
 
     render(){
         return(
@@ -21,23 +40,23 @@ export default class Summary extends Component{
                     <hr></hr>
 
 
+                    {/* Add to modal for mobile/desktop versions */}
+                    <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+                <ModalHeader className="summaryModalHeader" toggle={this.toggle}><div className="modalPersona"><strong>Persona</strong></div></ModalHeader>
+                <ModalBody className="modalBody">
+                <p>This test is also a <strong>100% free </strong>and open source project brought to you by <strong>Hunter Metts</strong> and <strong>Jordan Rosas</strong>. <br></br> If you feel lead to contribute to our efforts or take a look at the code for this project, we've provided a link at the <strong>bottom</strong> of each page to our <strong>GitHub</strong> and <strong>Venmo!</strong> <br></br> <strong>Happy testing!</strong></p>
 
-
-                    {/* Add to modal for mobile version */}
-                    {/* 
-                    <h6 className="summaryPersonaSummary headerDesc">This test is also a <strong>100% free </strong>and open source project brought to you by <strong>Hunter Metts</strong> and <strong>Jordan Rosas</strong>. <br></br> If you feel lead to contribute to our efforts or take a look at the code for this project, we've provided a link at the <strong>bottom</strong> of each page to our <strong>GitHub</strong> and <strong>Venmo!</strong> <br></br> <strong>Happy testing!</strong></h6> */}
+                </ModalBody>
+                <ModalFooter className="modalButtonCenter">
+                    <Button color="dark" className="modalButton" onClick={() => this.props.history.push("/pageOne")}>Let's go already!</Button>{' '}
+                </ModalFooter>
+                </Modal>
                 </div>
                     <div className="flexContainerForForm">
 
                         <div className="stepOneButtonContainer">
                             <button id = "WelcomeButton" type="button" className="btn text-dark welcomeButton" onClick={() => this.pushToPageOne()}>Begin</button>
                         </div>
-
-                        {/* <div  className="centerProgress">
-                            <div className="progressBar">
-                                <Progress striped animated color="success" value="25" />
-                            </div>
-                        </div> */}
                     </div>
                 </div>
                 <img className = "Cloud" src = {Cloud} alt = "cloud" />

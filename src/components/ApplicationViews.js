@@ -29,7 +29,7 @@ export default class ApplicationViews extends Component {
 
   //Will grab the state of the rate ex: 0-6
   handleRatingChange = (rating) => {
-    this.setState({rate:rating}) 
+    this.setState({rate:rating})
   }
 
   //Captures state and console.log to confirm state is being set
