@@ -19,13 +19,18 @@ export default class Summary extends Component{
                     If you completely <strong>disagree</strong> with the statement an appropriate response would be <strong>0</strong>, while if you completely <strong>agree</strong> with the statement an appropriate response would be <strong>6</strong>.<br></br>
                     Please remember to answer these questions <strong>honestly</strong> and what your <strong>natural intuition</strong> tells you.<br></br></h4>
                     <hr></hr>
-{/*
+
+
+
+
+                    {/* Add to modal for mobile version */}
+                    {/* 
                     <h6 className="summaryPersonaSummary headerDesc">This test is also a <strong>100% free </strong>and open source project brought to you by <strong>Hunter Metts</strong> and <strong>Jordan Rosas</strong>. <br></br> If you feel lead to contribute to our efforts or take a look at the code for this project, we've provided a link at the <strong>bottom</strong> of each page to our <strong>GitHub</strong> and <strong>Venmo!</strong> <br></br> <strong>Happy testing!</strong></h6> */}
                 </div>
                     <div className="flexContainerForForm">
 
                         <div className="stepOneButtonContainer">
-                            <button id = "WelcomeButton" type="button" className="btn text-dark welcomeButton" onClick={() => this.props.logUserName()}>Begin</button>
+                            <button id = "WelcomeButton" type="button" className="btn text-dark welcomeButton" onClick={() => this.pushToPageOne()}>Begin</button>
                         </div>
 
                         {/* <div  className="centerProgress">

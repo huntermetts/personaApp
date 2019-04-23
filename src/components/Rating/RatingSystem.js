@@ -17,7 +17,6 @@ export default class ResetRating extends Component {
     return (
       <div>
         <Rating {...this.props}  placeholderRating={this.state.value} />
-        {/* <button onClick={this.handleClick}>Reset</button> */}
       </div>
     );
   }
