@@ -2,6 +2,7 @@ import { Route, Redirect } from "react-router-dom";
 import React, { Component } from "react";
 import Welcome from "./welcome/Welcome";
 import Summary from "./summary/Summary"
+import PageOne from "./Questions/PageOne"
 
 export default class ApplicationViews extends Component {
 
@@ -51,9 +52,7 @@ export default class ApplicationViews extends Component {
                   />
           }}
         />
-
-
-         {/* Page 1 of app routed below (summary page) */}
+        {/* Page 1 of app routed below (summary page) */}
         <Route
           exact path="/summary" render={props => {
             return <Summary {...props}
@@ -63,10 +62,12 @@ export default class ApplicationViews extends Component {
                   />
           }}
         />
+        {/* Route for page one of questions */}
         <Route
           exact path="/pageOne" render={props => {
-            return <Summary {...props}
+            return <PageOne {...props}
                     handleFieldChange = {this.handleFieldChange}
+                    handleRatingChange = {this.handleRatingChange}
                   />
           }}
         />

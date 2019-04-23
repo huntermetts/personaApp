@@ -20,13 +20,18 @@ export default class Summary extends Component{
                     completely disagree</strong>, <strong>6 = completely agree</strong>, <strong>1 through 5 = the various stages between the two extremes</strong>. Before you mark your answer, consider the broad, overarching patterns of your life. On the whole, does this statement fit me or
                     not? by the end of the test we'll be able to <strong>establish</strong> your type!<br></br></h4>
                     <hr></hr>
-{/* 
+
+
+
+
+                    {/* Add to modal for mobile version */}
+                    {/* 
                     <h6 className="summaryPersonaSummary headerDesc">This test is also a <strong>100% free </strong>and open source project brought to you by <strong>Hunter Metts</strong> and <strong>Jordan Rosas</strong>. <br></br> If you feel lead to contribute to our efforts or take a look at the code for this project, we've provided a link at the <strong>bottom</strong> of each page to our <strong>GitHub</strong> and <strong>Venmo!</strong> <br></br> <strong>Happy testing!</strong></h6> */}
                 </div>
                     <div className="flexContainerForForm">
 
                         <div className="stepOneButtonContainer">
-                            <button id = "WelcomeButton" type="button" className="btn text-dark welcomeButton" onClick={() => this.props.logUserName()}>Begin</button>
+                            <button id = "WelcomeButton" type="button" className="btn text-dark welcomeButton" onClick={() => this.pushToPageOne()}>Begin</button>
                         </div>
 
                         {/* <div  className="centerProgress">
