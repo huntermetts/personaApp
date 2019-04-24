@@ -35,3 +35,7 @@ Modal{
     line-height: 25px;
     letter-spacing: 4px;
 }
+
+.modalColor{
+        background-color:#F4F1E8;
+}

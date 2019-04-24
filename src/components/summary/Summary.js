@@ -41,7 +41,8 @@ export default class Summary extends Component{
 
 
                     {/* Add to modal for mobile/desktop versions */}
-                    <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+
+                <Modal isOpen={this.state.modal} toggle={this.toggle} contentClassName="modalColor">
                 <ModalHeader className="summaryModalHeader" toggle={this.toggle}><div className="modalPersona"><strong>Persona</strong></div></ModalHeader>
                 <ModalBody className="modalBody">
                 <p>This test is also a <strong>100% free </strong>and open source project brought to you by <strong>Hunter Metts</strong> and <strong>Jordan Rosas</strong>. <br></br> If you feel lead to contribute to our efforts or take a look at the code for this project, we've provided a link at the <strong>bottom</strong> of each page to our <strong>GitHub</strong> and <strong>Venmo!</strong> <br></br> <strong>Happy testing!</strong></p>
@@ -51,6 +52,7 @@ export default class Summary extends Component{
                     <Button color="dark" className="modalButton" onClick={() => this.props.history.push("/pageOne")}>Let's go already!</Button>{' '}
                 </ModalFooter>
                 </Modal>
+
                 </div>
                     <div className="flexContainerForForm">
 
