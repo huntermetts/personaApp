@@ -39,3 +39,28 @@ Modal{
 .modalColor{
         background-color:#F4F1E8;
 }
+
+/* ________________________________ */
+/* Ipad */
+@media(max-device-width : 768px)
+{
+    .progressBar{
+        margin-top:40px;
+    }
+
+    .backgroundContainer{
+        padding-bottom: 100px;
+    }
+}
+
+/* _________________________________ */
+/* Iphone */
+@media (min-width: 992px) {
+    .progressBar{
+        margin-top:40px;
+    }
+
+    .backgroundContainer{
+        padding-bottom: 100px;
+    }
+}
