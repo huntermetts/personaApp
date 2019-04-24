@@ -26,6 +26,87 @@ export default class PageOne extends Component
 
         />
 
+         {/* Question 2 */}
+         <p className="questions">2. I can observe emotionally tense situations while keeping a sober distance from it all.
+        </p>
+          <Rating className="rating"
+          stop = {6}
+          initialRating = {1}
+
+        />
+
+        {/* Question 3 */}
+        <p className="questions">3. I like to work within the framework of an institution.
+        </p>
+          <Rating className="rating"
+          stop = {6}
+          initialRating = {1}
+
+        />
+
+         {/* Question 4 */}
+         <p className="questions">4. It's important to make an impression.
+        </p>
+          <Rating className="rating"
+          stop = {6}
+          initialRating = {1}
+
+        />
+
+        {/* Question 5 */}
+        <p className="questions">5. I would like to be independent.
+        </p>
+          <Rating className="rating"
+          stop = {6}
+          initialRating = {1}
+
+        />
+
+        {/* Question 6 */}
+        <p className="questions">6. The most important thing for me is that the people around me feel good.
+        </p>
+          <Rating className="rating"
+          stop = {6}
+          initialRating = {1}
+
+        />
+
+             {/* Question 7 */}
+             <p className="questions">7. For me it's important to plan the future, so that I know what’s heading my way.
+        </p>
+          <Rating className="rating"
+          stop = {6}
+          initialRating = {1}
+
+        />
+
+           {/* Question 8 */}
+           <p className="questions">8. When someone needs my help, I'm ready to put all my energy to work for him or her.
+        </p>
+          <Rating className="rating"
+          stop = {6}
+          initialRating = {1}
+
+        />
+
+         {/* Question 9 */}
+         <p className="questions">9.  I want to live emotionally passionately with all my senses, even if it hurts.
+        </p>
+          <Rating className="rating"
+          stop = {6}
+          initialRating = {1}
+
+        />
+
+        {/* Question 10 */}
+        <p className="questions">10.  I have a hard time putting up with imperfections, whether in or in others.
+        </p>
+          <Rating className="rating"
+          stop = {6}
+          initialRating = {1}
+
+        />
+
           <div  className="centerProgress">
               <div className="progressBar">
                   <Progress striped animated color="dark" value="20" />
