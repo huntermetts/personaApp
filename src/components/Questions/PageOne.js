@@ -21,7 +21,10 @@ export default class PageOne extends Component
           {/* Question 1 */}
           <p className="questions">1. Life goes better if you look on the positive side instead of the negative.</p>
           <Rating className="rating"
-          stop = {6} />
+          stop = {6}
+          initialRating = {1}
+
+        />
 
           <div  className="centerProgress">
               <div className="progressBar">
@@ -35,6 +38,12 @@ export default class PageOne extends Component
         <img className = "Cloud3" src = {Cloud} alt = "cloud" />
         <img className = "Cloud4" src = {Cloud} alt = "cloud" />
         <img className = "Cloud5" src = {Cloud} alt = "cloud" />
+
+         <div className="centerLinks">
+                    <a href="https://venmo.com/Hunter-Metts" className="personalLinks">Hunter Metts Venmo</a>
+                    <a href="https://venmo.com/Jordan-Rosas-3" className="personalLinks">Jordan Rosas Venmo</a>
+                    <a href="https://github.com/huntermetts/personaApp" className="personalLinks">Project Code</a>
+        </div>
 
       </>
     )

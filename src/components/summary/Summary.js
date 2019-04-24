@@ -34,8 +34,8 @@ export default class Summary extends Component{
                 <div className="">
                     <h2 className="welcomePersona font-weight-bold">Awesome {this.props.userName}.</h2>
                     <hr></hr>
-                    <h4 className="summaryPersonaSummary headerDesc">This test consists of <strong>115 </strong>questions using a scale from <strong>0</strong> to <strong>6</strong> to indicate what enneagram type you are!<br></br>
-                    If you completely <strong>disagree</strong> with the statement an appropriate response would be <strong>0</strong>, while if you completely <strong>agree</strong> with the statement an appropriate response would be <strong>6</strong>.<br></br>
+                    <h4 className="summaryPersonaSummary headerDesc">This test consists of <strong>115 </strong>questions using a scale from <strong>1</strong> to <strong>6</strong> to indicate what enneagram type you are!<br></br>
+                    If you completely <strong>disagree</strong> with the statement an appropriate response would be <strong>1</strong>, while if you completely <strong>agree</strong> with the statement an appropriate response would be <strong>6</strong>.<br></br>
                     Please remember to answer these questions <strong>honestly</strong> and what your <strong>natural intuition</strong> tells you.<br></br></h4>
                     <hr></hr>
 
