@@ -56,13 +56,16 @@ export default class ApplicationViews extends Component {
     this.setState({rate:rating})
   }
 
-  questionRate = (question, type, rate) => {
+  questionRate = (question, type, rate, questionState, questionType) => {
     question = rate 
-    type += rate
+    type += question
     console.log(question)
     console.log(type) 
+    console.log(questionType)
+    console.log(questionState)
     this.setState({
-      Question1:question
+       [questionState]:question,
+       [questionType]: type
     })
   }
 

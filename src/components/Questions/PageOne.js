@@ -23,7 +23,7 @@ export default class PageOne extends Component
 
           {/* Question 1 */}
           <p className="questions">1. Life goes better if you look on the positive side instead of the negative.</p>
-          <Rating className="rating" onChange={(rate) => this.props.questionRate(this.props.questionOne, this.props.TypeSeven, rate)}
+          <Rating className="rating" onChange={(rate) => this.props.questionRate(this.props.questionOne, this.props.TypeSeven, rate, "Question1", "TypeSeven")}
           stop = {6}
           initialRating = {1}
 
