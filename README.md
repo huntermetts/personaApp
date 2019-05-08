@@ -5,3 +5,5 @@ I strongly encourage you to check back in a few weeks when this project is compl
 We're all about the cool points!
 
 ![Alt text](personaDesktop.png "Persona")
+![Alt text](personaTablet.png "Persona")
+![Alt text](personaPhone.png "Persona")
