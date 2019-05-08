@@ -8,6 +8,7 @@ import "./PageOne.css";
 
 export default class PageOne extends Component
 {
+
   render(){
     return(
       <>
@@ -20,7 +21,7 @@ export default class PageOne extends Component
 
           {/* Question 1 */}
           <p className="questions">1. Life goes better if you look on the positive side instead of the negative.</p>
-          <Rating className="rating"
+          <Rating className="rating" onChange={(rate) => console.log(rate)}
           stop = {6}
           initialRating = {1}
 

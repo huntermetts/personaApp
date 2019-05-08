@@ -7,6 +7,32 @@ import PageOne from "./Questions/PageOne"
 export default class ApplicationViews extends Component {
 
   state = {
+    userName: "",
+    // Page one:
+    Question1:0,
+    Question2:0,
+    Question3:0,
+    Question4:0,
+    Question5:0,
+    Question6:0,
+    Question7:0,
+    Question8:0,
+    Question9:0,
+    Question10:0,
+    Question11:0,
+    Question12:0,
+    Question13:0,
+    Question14:0,
+    Question15:0,
+    Question16:0,
+    Question17:0,
+    Question18:0,
+    Question19:0,
+    Question20:0,
+    Question21:0,
+    Question22:0,
+    Question23:0,
+    // Types:
     TypeOne:0,
     TypeTwo:0,
     TypeThree:0,
@@ -15,8 +41,7 @@ export default class ApplicationViews extends Component {
     TypeSix:0,
     TypeSeven: 0,
     TypeEight:0,
-    TypeNine:0,
-    userName: ""
+    TypeNine:0
   }
   //Field Change to get users name before taking the test
   handleFieldChange = evt => {
@@ -37,6 +62,35 @@ export default class ApplicationViews extends Component {
   // logUserName = () => {
   //   alert(`The user's name is ${this.state.userName}`)
   // }
+
+  resetSearch = () => {
+    this.setState({userName:""});
+    // Resetting question values
+    this.setState({Question1:0});
+    this.setState({Question2:0});
+    this.setState({Question3:0});
+    this.setState({Question4:0});
+    this.setState({Question5:0});
+    this.setState({Question6:0});
+    this.setState({Question7:0});
+    this.setState({Question8:0});
+    this.setState({Question9:0});
+    this.setState({Question10:0});
+    this.setState({Question11:0});
+    this.setState({Question12:0});
+    this.setState({Question13:0});
+    this.setState({Question14:0});
+    this.setState({Question15:0});
+    this.setState({Question16:0});
+    this.setState({Question17:0});
+    this.setState({Question18:0});
+    this.setState({Question19:0});
+    this.setState({Question20:0});
+    this.setState({Question21:0});
+    this.setState({Question22:0});
+    this.setState({Question23:0});
+    this.setState({Question:0});
+  }
 
   render() {
     return (
@@ -68,6 +122,7 @@ export default class ApplicationViews extends Component {
             return <PageOne {...props}
                     handleFieldChange = {this.handleFieldChange}
                     handleRatingChange = {this.handleRatingChange}
+
                   />
           }}
         />

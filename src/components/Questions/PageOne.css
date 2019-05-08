@@ -36,10 +36,6 @@ Modal{
     letter-spacing: 4px;
 }
 
-.modalColor{
-        background-color:#F4F1E8;
-}
-
 /* ________________________________ */
 /* Ipad */
 @media(max-device-width : 768px)
