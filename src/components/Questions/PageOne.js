@@ -9,6 +9,8 @@ import "./PageOne.css";
 export default class PageOne extends Component
 {
 
+
+
   render(){
     return(
       <>
@@ -21,7 +23,7 @@ export default class PageOne extends Component
 
           {/* Question 1 */}
           <p className="questions">1. Life goes better if you look on the positive side instead of the negative.</p>
-          <Rating className="rating" onChange={(rate) => console.log(rate)}
+          <Rating className="rating" onChange={(rate) => this.props.questionRate(this.props.questionOne, this.props.TypeSeven, rate)}
           stop = {6}
           initialRating = {1}
 
@@ -46,7 +48,7 @@ export default class PageOne extends Component
         />
 
          {/* Question 4 */}
-         <p className="questions">4. It's important to make an impression.
+        <p className="questions">4. It's important to make an impression.
         </p>
           <Rating className="rating"
           stop = {6}

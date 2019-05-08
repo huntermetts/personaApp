@@ -56,6 +56,16 @@ export default class ApplicationViews extends Component {
     this.setState({rate:rating})
   }
 
+  questionRate = (question, type, rate) => {
+    question = rate 
+    type += rate
+    console.log(question)
+    console.log(type) 
+    this.setState({
+      Question1:question
+    })
+  }
+
   //Captures state and console.log to confirm state is being set
   // Used for testing state, now refactored.
   // logUserName = () => {
@@ -144,6 +154,20 @@ export default class ApplicationViews extends Component {
                     questionTwentyOne = {this.state.Question21}
                     questionTwentyTwo = {this.state.Question22}
                     questionTwentyThree = {this.state.Question23}
+                    //==========================================
+                    //PASSING Type STATE
+                    //==========================================
+                    TypeOne = {this.state.TypeOne}
+                    TypeTwo = {this.state.TypeTwo}
+                    TypeThree = {this.state.TypeThree}
+                    TypeFour = {this.state.TypeFour}
+                    TypeFive = {this.state.TypeFive}
+                    TypeSix = {this.state.TypeSix}
+                    TypeSeven = {this.state.TypeSeven} 
+                    TypeEight = {this.state.TypeEight} 
+                    TypeNine = {this.state.TypeNine}
+
+                    questionRate = {this.questionRate}
                   />
           }}
         />
