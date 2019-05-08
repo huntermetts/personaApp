@@ -49,7 +49,6 @@ export default class ApplicationViews extends Component {
     const stateToChange = {}
     stateToChange[evt.target.id] = evt.target.value
     this.setState(stateToChange)
-    console.log(stateToChange)
   }
 
   //Will grab the state of the rate ex: 0-6

@@ -28,7 +28,7 @@ export default class PageOne extends Component
         />
 
          {/* Question 2 */}
-         <p className="questions">2. I can observe emotionally tense situations while keeping a sober distance from it all.
+        <p className="questions">2. I can observe emotionally tense situations while keeping a sober distance from it all.
         </p>
           <Rating className="rating"
           stop = {6}
