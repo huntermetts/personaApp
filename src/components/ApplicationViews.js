@@ -122,7 +122,32 @@ export default class ApplicationViews extends Component {
             return <PageOne {...props}
                     handleFieldChange = {this.handleFieldChange}
                     handleRatingChange = {this.handleRatingChange}
-
+                    //==========================================
+                    //PASSING QUESTION STATE
+                    //==========================================
+                    questionOne = {this.state.Question1}
+                    questionTwo = {this.state.Question2}
+                    questionThree = {this.state.Question3}
+                    questionFour = {this.state.Question4}
+                    questionFive = {this.state.Question5}
+                    questionSix = {this.state.Question6}
+                    questionSeven = {this.state.Question7}
+                    questionEight = {this.state.Question8}
+                    questionNine = {this.state.Question9}
+                    questionTen = {this.state.Question10}
+                    questionEleven = {this.state.Question11}
+                    questionTwelve = {this.state.Question12}
+                    questionThirteen = {this.state.Question13}
+                    questionFourteen = {this.state.Question14}
+                    questionFifteen = {this.state.Question15}
+                    questionSixteen = {this.state.Question16}
+                    questionSeventeen = {this.state.Question17}
+                    questionEighteen = {this.state.Question18}
+                    questionNineteen = {this.state.Question19}
+                    questionTwenty = {this.state.Question20}
+                    questionTwentyOne = {this.state.Question21}
+                    questionTwentyTwo = {this.state.Question22}
+                    questionTwentyThree = {this.state.Question23}
                   />
           }}
         />
