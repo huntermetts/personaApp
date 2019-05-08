@@ -89,7 +89,6 @@ export default class ApplicationViews extends Component {
     this.setState({Question21:0});
     this.setState({Question22:0});
     this.setState({Question23:0});
-    this.setState({Question:0});
   }
 
   render() {
@@ -101,7 +100,6 @@ export default class ApplicationViews extends Component {
           exact path="/" render={props => {
             return <Welcome {...props}
                     handleFieldChange = {this.handleFieldChange}
-                    // logUserName = {this.logUserName}
                     userName = {this.userName}
                   />
           }}
@@ -111,7 +109,6 @@ export default class ApplicationViews extends Component {
           exact path="/summary" render={props => {
             return <Summary {...props}
                     handleFieldChange = {this.handleFieldChange}
-                    // logUserName = {this.logUserName}
                     userName = {this.state.userName}
                   />
           }}
