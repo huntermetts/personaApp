@@ -7,7 +7,6 @@ export default class Welcome extends Component{
 
     pushToSummaryPage = () => {
         this.props.history.push("/summary")
-        // this.props.logUserName()
     }
 
     render(){
