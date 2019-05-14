@@ -35,6 +35,12 @@ Modal{
     line-height: 25px;
     letter-spacing: 4px;
 }
+.stepOneButtonContainers{
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+    margin-bottom:75px;
+}
 
 /* ________________________________ */
 /* Ipad */

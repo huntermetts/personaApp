@@ -64,8 +64,8 @@ export default class ApplicationViews extends Component {
     console.log(questionType)
     console.log(questionState)
     this.setState({
-       [questionState]:question,
-       [questionType]: type
+      [questionState]:question,
+      [questionType]: type
     })
   }
 
