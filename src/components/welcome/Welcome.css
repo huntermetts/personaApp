@@ -50,6 +50,7 @@
     .button:hover{
     color:#fff;
     }
+
     .button::before{
     content:"";
     position:absolute;
@@ -63,11 +64,16 @@
     transform-origin:0 0;
     transition-timing-function: cubic-bezier(0.5,1.7,0.4,0.6);
     }
+
     .btn1::before{
     transform:scaleX(0);
     }
     .btn1:hover::before{
     transform:scaleX(1);
+    }
+
+    .btn1{
+        margin-top:180px;
     }
     .enterName{
         padding-top:25px;
