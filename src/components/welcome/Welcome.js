@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Cloud from '../assets/Clouds.png'
 import "./Welcome.css";
+
+
 export default class Welcome extends Component{
 
     pushToSummaryPage = () => {
