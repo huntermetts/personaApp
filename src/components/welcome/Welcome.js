@@ -8,7 +8,7 @@ export default class Welcome extends Component{
     pushToSummaryPage = () => {
         this.props.history.push("/summary")
         // this.props.logUserName()
-      }
+    }
 
     render(){
         return(
@@ -32,8 +32,15 @@ export default class Welcome extends Component{
                         </form>
 
                         <div className="stepOneButtonContainer">
-                            <button id = "WelcomeButton" type="button" className="btn text-dark welcomeButton buttonEffect" onClick={() => this.pushToSummaryPage()}>Let's go!</button>
+                            <button type="button" class = "button btn1" onClick={() => this.pushToSummaryPage()}>Let's go!</button>
                         </div>
+
+                        {/* <div  className="centerProgress">
+                            <div className="progressBar">
+                                <Progress striped animated color="success" value="25" />
+                            </div>
+                            btn text-dark welcomeButton button
+                        </div> */}
                     </div>
                 </div>
                 <img className = "Cloud" src = {Cloud} alt = "cloud" />

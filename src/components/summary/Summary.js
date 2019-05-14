@@ -56,7 +56,7 @@ export default class Summary extends Component{
                 </div>
                     <div className="flexContainerForForm">
 
-                        <div className="stepOneButtonContainer">
+                        <div className="stepOneButtonContainers">
                             <button id = "WelcomeButton" type="button" className="btn text-dark welcomeButton" onClick={() => this.pushToPageOne()}>Begin</button>
                         </div>
                     </div>

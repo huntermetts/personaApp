@@ -352,7 +352,7 @@ export default class PageOne extends Component
 
         />
 
-         <div className="stepOneButtonContainer">
+         <div className="stepOneButtonContainers">
             <button id = "WelcomeButton" type="button" className="btn text-dark welcomeButton" onClick={() => this.pushToPageOne()}>Next</button>
          </div>
 
