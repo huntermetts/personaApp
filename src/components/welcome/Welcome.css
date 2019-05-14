@@ -137,13 +137,6 @@
     .welcomeButton{
         background-color:white;
     }
-
-    .stepOneButtonContainer{
-        display: flex;
-        justify-content: center;
-        margin-top:20px;
-    }
-
     .enterName{
         padding-top:15px;
     }
