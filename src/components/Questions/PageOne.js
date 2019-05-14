@@ -48,7 +48,110 @@ export default class PageOne extends Component
     console.log(rating)
   }
 
+  handleRatingChange3 = (rating) => {
+    this.setState({Question3:rating})
+    console.log(rating)
+  }
 
+  handleRatingChange4 = (rating) => {
+    this.setState({Question4:rating})
+    console.log(rating)
+  }
+
+  handleRatingChange5 = (rating) => {
+    this.setState({Question5:rating})
+    console.log(rating)
+  }
+
+  handleRatingChange6 = (rating) => {
+    this.setState({Question6:rating})
+    console.log(rating)
+  }
+
+  handleRatingChange7 = (rating) => {
+    this.setState({Question7:rating})
+    console.log(rating)
+  }
+
+  handleRatingChange8 = (rating) => {
+    this.setState({Question8:rating})
+    console.log(rating)
+  }
+
+  handleRatingChange9 = (rating) => {
+    this.setState({Question9:rating})
+    console.log(rating)
+  }
+
+  handleRatingChange10 = (rating) => {
+    this.setState({Question10:rating})
+    console.log(rating)
+  }
+
+  handleRatingChange11 = (rating) => {
+    this.setState({Question11:rating})
+    console.log(rating)
+  }
+
+  handleRatingChange12 = (rating) => {
+    this.setState({Question12:rating})
+    console.log(rating)
+  }
+
+  handleRatingChange13 = (rating) => {
+    this.setState({Question13:rating})
+    console.log(rating)
+  }
+
+  handleRatingChange14 = (rating) => {
+    this.setState({Question14:rating})
+    console.log(rating)
+  }
+
+  handleRatingChange15 = (rating) => {
+    this.setState({Question15:rating})
+    console.log(rating)
+  }
+
+  handleRatingChange16 = (rating) => {
+    this.setState({Question16:rating})
+    console.log(rating)
+  }
+
+  handleRatingChange17 = (rating) => {
+    this.setState({Question17:rating})
+    console.log(rating)
+  }
+
+  handleRatingChange18 = (rating) => {
+    this.setState({Question18:rating})
+    console.log(rating)
+  }
+
+  handleRatingChange19 = (rating) => {
+    this.setState({Question19:rating})
+    console.log(rating)
+  }
+
+  handleRatingChange20 = (rating) => {
+    this.setState({Question20:rating})
+    console.log(rating)
+  }
+
+  handleRatingChange21 = (rating) => {
+    this.setState({Question21:rating})
+    console.log(rating)
+  }
+
+  handleRatingChange22 = (rating) => {
+    this.setState({Question22:rating})
+    console.log(rating)
+  }
+
+  handleRatingChange23 = (rating) => {
+    this.setState({Question23:rating})
+    console.log(rating)
+  }
   render(){
     return(
       <>
