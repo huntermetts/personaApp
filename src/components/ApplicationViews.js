@@ -28,26 +28,6 @@ export default class ApplicationViews extends Component {
     this.setState(stateToChange)
   }
 
-<<<<<<< HEAD
-  //Will grab the state of the rate ex: 0-6
-  handleRatingChange = (rating) => {
-    this.setState({rate:rating})
-  }
-
-  questionRate = (question, type, rate, questionState, questionType) => {
-    question = rate 
-    type += question
-    console.log(question)
-    console.log(type) 
-    console.log(questionType)
-    console.log(questionState)
-    this.setState({
-      [questionState]:question,
-      [questionType]: type
-    })
-  }
-=======
->>>>>>> 1df905b1f1db339f040baf38d91b494c76b18d10
 
 
   resetSearch = () => {
