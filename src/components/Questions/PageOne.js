@@ -9,6 +9,44 @@ import "./PageOne.css";
 export default class PageOne extends Component
 {
 
+  state={
+    rate: 0,
+      // Page one:
+    Question1:1,
+    Question2:1,
+    Question3:1,
+    Question4:1,
+    Question5:1,
+    Question6:1,
+    Question7:1,
+    Question8:1,
+    Question9:1,
+    Question10:1,
+    Question11:1,
+    Question12:1,
+    Question13:1,
+    Question14:1,
+    Question15:1,
+    Question16:1,
+    Question17:1,
+    Question18:1,
+    Question19:1,
+    Question20:1,
+    Question21:1,
+    Question22:1,
+    Question23:1
+  }
+
+  //Will grab the state of the rate ex: 1-6
+  handleRatingChange1 = (rating) => {
+    this.setState({Question1:rating})
+    console.log(rating)
+  }
+
+  handleRatingChange2 = (rating) => {
+    this.setState({Question2:rating})
+    console.log(rating)
+  }
 
 
   render(){
@@ -23,18 +61,18 @@ export default class PageOne extends Component
 
           {/* Question 1 */}
           <p className="questions">1. Life goes better if you look on the positive side instead of the negative.</p>
-          <Rating className="rating" onChange={(rate) => this.props.questionRate(this.props.questionOne, this.props.TypeSeven, rate, "Question1", "TypeSeven")}
+          <Rating className="rating" onChange={this.handleRatingChange1}
           stop = {6}
-          initialRating = {1}
+          initialRating = {this.state.Question1}
 
         />
 
          {/* Question 2 */}
         <p className="questions">2. I can observe emotionally tense situations while keeping a sober distance from it all.
         </p>
-          <Rating className="rating"
+        <Rating className="rating" onChange={this.handleRatingChange2}
           stop = {6}
-          initialRating = {1}
+          initialRating = {this.state.Question2}
 
         />
 

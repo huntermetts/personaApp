@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Cloud from '../assets/Clouds.png'
 import "./Welcome.css";
+
+
 export default class Welcome extends Component{
 
     pushToSummaryPage = () => {
@@ -30,14 +32,8 @@ export default class Welcome extends Component{
                         </form>
 
                         <div className="stepOneButtonContainer">
-                            <button id = "WelcomeButton" type="button" className="btn text-dark welcomeButton" onClick={() => this.pushToSummaryPage()}>Let's go!</button>
+                            <button id = "WelcomeButton" type="button" className="btn text-dark welcomeButton buttonEffect" onClick={() => this.pushToSummaryPage()}>Let's go!</button>
                         </div>
-
-                        {/* <div  className="centerProgress">
-                            <div className="progressBar">
-                                <Progress striped animated color="success" value="25" />
-                            </div>
-                        </div> */}
                     </div>
                 </div>
                 <img className = "Cloud" src = {Cloud} alt = "cloud" />

@@ -75,7 +75,10 @@
         left:23%;
         z-index: -1;
     }
-}
+
+    .buttonEffect{
+        cursor: pointer;
+    }
 
 /* ______________________________________ */
 /* Iphone */
@@ -150,6 +153,7 @@
         z-index: -1;
     }
 
+    }
 
 }
 

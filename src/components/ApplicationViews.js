@@ -8,30 +8,7 @@ export default class ApplicationViews extends Component {
 
   state = {
     userName: "",
-    // Page one:
-    Question1:0,
-    Question2:0,
-    Question3:0,
-    Question4:0,
-    Question5:0,
-    Question6:0,
-    Question7:0,
-    Question8:0,
-    Question9:0,
-    Question10:0,
-    Question11:0,
-    Question12:0,
-    Question13:0,
-    Question14:0,
-    Question15:0,
-    Question16:0,
-    Question17:0,
-    Question18:0,
-    Question19:0,
-    Question20:0,
-    Question21:0,
-    Question22:0,
-    Question23:0,
+
     // Types:
     TypeOne:0,
     TypeTwo:0,
@@ -51,29 +28,7 @@ export default class ApplicationViews extends Component {
     this.setState(stateToChange)
   }
 
-  //Will grab the state of the rate ex: 0-6
-  handleRatingChange = (rating) => {
-    this.setState({rate:rating})
-  }
 
-  questionRate = (question, type, rate, questionState, questionType) => {
-    question = rate 
-    type += question
-    console.log(question)
-    console.log(type) 
-    console.log(questionType)
-    console.log(questionState)
-    this.setState({
-       [questionState]:question,
-       [questionType]: type
-    })
-  }
-
-  //Captures state and console.log to confirm state is being set
-  // Used for testing state, now refactored.
-  // logUserName = () => {
-  //   alert(`The user's name is ${this.state.userName}`)
-  // }
 
   resetSearch = () => {
     this.setState({userName:""});
@@ -166,8 +121,8 @@ export default class ApplicationViews extends Component {
                     TypeFour = {this.state.TypeFour}
                     TypeFive = {this.state.TypeFive}
                     TypeSix = {this.state.TypeSix}
-                    TypeSeven = {this.state.TypeSeven} 
-                    TypeEight = {this.state.TypeEight} 
+                    TypeSeven = {this.state.TypeSeven}
+                    TypeEight = {this.state.TypeEight}
                     TypeNine = {this.state.TypeNine}
 
                     questionRate = {this.questionRate}
