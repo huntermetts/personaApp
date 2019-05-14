@@ -10,7 +10,6 @@ export default class PageOne extends Component
 {
 
   state={
-    rate: 0,
       // Page one:
     Question1:1,
     Question2:1,
@@ -152,6 +151,11 @@ export default class PageOne extends Component
     this.setState({Question23:rating})
     console.log(rating)
   }
+
+  pushToSecondPage = () => {
+    this.props.history.push("/results")
+}
+
   render(){
     return(
       <>
@@ -331,7 +335,7 @@ export default class PageOne extends Component
         />
 
         <div className="stepOneButtonContainers">
-            <button id = "WelcomeButton" type="button" className="btn text-dark welcomeButton" onClick={() => this.pushToPageOne()}>Next</button>
+            <button id = "WelcomeButton" type="button" className="btn text-dark welcomeButton" onClick={() => this.pushToSecondPage()}>Next</button>
         </div>
 
 

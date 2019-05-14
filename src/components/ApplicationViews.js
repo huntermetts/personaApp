@@ -3,22 +3,12 @@ import React, { Component } from "react";
 import Welcome from "./welcome/Welcome";
 import Summary from "./summary/Summary"
 import PageOne from "./Questions/PageOne"
+import Results from "./Results/Results"
 
 export default class ApplicationViews extends Component {
 
   state = {
-    userName: "",
-
-    // Types:
-    TypeOne:0,
-    TypeTwo:0,
-    TypeThree:0,
-    TypeFour:0,
-    TypeFive:0,
-    TypeSix:0,
-    TypeSeven: 0,
-    TypeEight:0,
-    TypeNine:0
+    userName: ""
   }
   //Field Change to get users name before taking the test
   handleFieldChange = evt => {
@@ -85,47 +75,15 @@ export default class ApplicationViews extends Component {
           exact path="/pageOne" render={props => {
             return <PageOne {...props}
                     handleFieldChange = {this.handleFieldChange}
-                    handleRatingChange = {this.handleRatingChange}
-                    //==========================================
-                    //PASSING QUESTION STATE
-                    //==========================================
-                    questionOne = {this.state.Question1}
-                    questionTwo = {this.state.Question2}
-                    questionThree = {this.state.Question3}
-                    questionFour = {this.state.Question4}
-                    questionFive = {this.state.Question5}
-                    questionSix = {this.state.Question6}
-                    questionSeven = {this.state.Question7}
-                    questionEight = {this.state.Question8}
-                    questionNine = {this.state.Question9}
-                    questionTen = {this.state.Question10}
-                    questionEleven = {this.state.Question11}
-                    questionTwelve = {this.state.Question12}
-                    questionThirteen = {this.state.Question13}
-                    questionFourteen = {this.state.Question14}
-                    questionFifteen = {this.state.Question15}
-                    questionSixteen = {this.state.Question16}
-                    questionSeventeen = {this.state.Question17}
-                    questionEighteen = {this.state.Question18}
-                    questionNineteen = {this.state.Question19}
-                    questionTwenty = {this.state.Question20}
-                    questionTwentyOne = {this.state.Question21}
-                    questionTwentyTwo = {this.state.Question22}
-                    questionTwentyThree = {this.state.Question23}
-                    //==========================================
-                    //PASSING Type STATE
-                    //==========================================
-                    TypeOne = {this.state.TypeOne}
-                    TypeTwo = {this.state.TypeTwo}
-                    TypeThree = {this.state.TypeThree}
-                    TypeFour = {this.state.TypeFour}
-                    TypeFive = {this.state.TypeFive}
-                    TypeSix = {this.state.TypeSix}
-                    TypeSeven = {this.state.TypeSeven}
-                    TypeEight = {this.state.TypeEight}
-                    TypeNine = {this.state.TypeNine}
+                  />
+          }}
+        />
 
-                    questionRate = {this.questionRate}
+         <Route
+          exact path="/results" render={props => {
+            return <Results {...props}
+                    handleFieldChange = {this.handleFieldChange}
+                    userName = {this.state.userName}
                   />
           }}
         />
