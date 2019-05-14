@@ -32,7 +32,7 @@ export default class Welcome extends Component{
                         </form>
 
                         <div className="stepOneButtonContainer">
-                            <button type="button" class = "button btn1" onClick={() => this.pushToSummaryPage()}>Let's go!</button>
+                            <button type="button" className= "btn button btn1" onClick={() => this.pushToSummaryPage()}>Let's go!</button>
                         </div>
 
                         {/* <div  className="centerProgress">
