@@ -24,9 +24,17 @@
 
 .modalButton{
     text-align: center;
+    background-color:#fff;
+    border:none;
+    color:black;
 }
+
 .stepOneButtonContainers{
     display: flex;
     justify-content: center;
     margin-top:50px;
+}
+
+.modalColor{
+    background-color:#F4F1E9; 
 }
