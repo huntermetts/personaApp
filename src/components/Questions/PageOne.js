@@ -1,14 +1,13 @@
-//Question One Is referring to type number 7
-import React, { Component } from 'react'
-import Rating from 'react-rating'
-import Cloud from '../assets/Clouds.png'
+import { Route, Redirect } from "react-router-dom";
+import React, { Component } from 'react';
+import Rating from 'react-rating';
+import Cloud from '../assets/Clouds.png';
 import { Progress } from 'reactstrap';
 import "./PageOne.css";
 
 
 export default class PageOne extends Component
 {
-
   state={
       // Page one:
     Question1:1,
@@ -33,127 +32,142 @@ export default class PageOne extends Component
     Question20:1,
     Question21:1,
     Question22:1,
-    Question23:1
+    Question23:1,
+    TypeOne:0,
+    TypeTwo:0,
+    TypeThree:0,
+    TypeFour:0,
+    TypeFive:0,
+    TypeSix:0,
+    TypeSeven: 0,
+    TypeEight:0,
+    TypeNine:0
   }
 
   //Will grab the state of the rate ex: 1-6
   handleRatingChange1 = (rating) => {
-    this.setState({Question1:rating})
+    this.setState({
+      Question1:rating,
+      TypeSeven:this.state.TypeSeven + rating
+    })
     console.log("Question 1: " + rating)
   }
 
   handleRatingChange2 = (rating) => {
-    this.setState({Question2:rating})
+    this.setState({
+      Question2:rating,
+      TypeFive:this.state.TypeFive + rating
+    })
     console.log("Question 2: " + rating)
   }
 
   handleRatingChange3 = (rating) => {
-    this.setState({Question3:rating})
+    this.setState({Question3:rating, TypeSix:this.state.TypeSix + rating})
     console.log("Question 3: " + rating)
   }
 
   handleRatingChange4 = (rating) => {
-    this.setState({Question4:rating})
+    this.setState({Question4:rating, TypeThree:this.state.TypeThree + rating})
     console.log("Question 4: " + rating)
   }
 
   handleRatingChange5 = (rating) => {
-    this.setState({Question5:rating})
+    this.setState({Question5:rating, TypeEight:this.state.TypeEight + rating})
     console.log("Question 5: " + rating)
   }
 
   handleRatingChange6 = (rating) => {
-    this.setState({Question6:rating})
+    this.setState({Question6:rating, TypeTwo:this.state.TypeTwo + rating})
     console.log("Question 6: " + rating)
   }
 
   handleRatingChange7 = (rating) => {
-    this.setState({Question7:rating})
+    this.setState({Question7:rating, TypeSix:this.state.TypeSix + rating})
     console.log("Question 7: " + rating)
   }
 
   handleRatingChange8 = (rating) => {
-    this.setState({Question8:rating})
+    this.setState({Question8:rating, TypeEight:this.state.TypeEight + rating})
     console.log("Question 8: " + rating)
   }
 
   handleRatingChange9 = (rating) => {
-    this.setState({Question9:rating})
+    this.setState({Question9:rating, TypeFour:this.state.TypeFour + rating, TypeEight:this.state.TypeEight + rating})
     console.log("Question 9: " + rating)
   }
 
   handleRatingChange10 = (rating) => {
-    this.setState({Question10:rating})
+    this.setState({Question10:rating, TypeOne:this.state.TypeOne + rating})
     console.log("Question 10: " + rating)
   }
 
   handleRatingChange11 = (rating) => {
-    this.setState({Question11:rating})
+    this.setState({Question11:rating, TypeNine:this.state.TypeNine + rating})
     console.log("Question 11: " + rating)
   }
 
   handleRatingChange12 = (rating) => {
-    this.setState({Question12:rating})
+    this.setState({Question12:rating, TypeOne:this.state.TypeOne + rating})
     console.log("Question 12: " + rating)
   }
 
   handleRatingChange13 = (rating) => {
-    this.setState({Question13:rating})
+    this.setState({Question13:rating, TypeThree:this.state.TypeThree + rating})
     console.log("Question 13: " + rating)
   }
 
   handleRatingChange14 = (rating) => {
-    this.setState({Question14:rating})
+    this.setState({Question14:rating, TypeTwo:this.state.TypeTwo + rating, TypeEight:this.state.TypeEight + rating})
     console.log("Question 14: " + rating)
   }
 
   handleRatingChange15 = (rating) => {
-    this.setState({Question15:rating})
+    this.setState({Question15:rating, TypeFour:this.state.TypeFour + rating})
     console.log("Question 15: " + rating)
   }
 
   handleRatingChange16 = (rating) => {
-    this.setState({Question16:rating})
+    this.setState({Question16:rating, TypeThree:this.state.TypeThree + rating})
     console.log("Question 16: " + rating)
   }
 
   handleRatingChange17 = (rating) => {
-    this.setState({Question17:rating})
+    this.setState({Question17:rating, TypeOne:this.state.TypeOne + rating})
     console.log("Question 17: " + rating)
   }
 
   handleRatingChange18 = (rating) => {
-    this.setState({Question18:rating})
+    this.setState({Question18:rating, TypeSix:this.state.TypeSix + rating})
     console.log("Question 18: " + rating)
   }
 
   handleRatingChange19 = (rating) => {
-    this.setState({Question19:rating})
+    this.setState({Question19:rating, TypeNine:this.state.TypeNine + rating})
     console.log("Question 19: " + rating)
   }
 
   handleRatingChange20 = (rating) => {
-    this.setState({Question20:rating})
+    this.setState({Question20:rating, TypeSix:this.state.TypeSix + rating})
     console.log("Question 20: " + rating)
   }
 
   handleRatingChange21 = (rating) => {
-    this.setState({Question21:rating})
+    this.setState({Question21:rating, TypeThree:this.state.TypeThree + rating})
     console.log("Question 21: " + rating)
   }
 
   handleRatingChange22 = (rating) => {
-    this.setState({Question22:rating})
+    this.setState({Question22:rating, TypeNine:this.state.TypeNine + rating})
     console.log("Question 22: " + rating)
   }
 
   handleRatingChange23 = (rating) => {
-    this.setState({Question23:rating})
+    this.setState({Question23:rating, TypeFour:this.state.TypeFour + rating})
     console.log("Question 23: " + rating)
   }
 
   pushToSecondPage = () => {
-    this.props.history.push("/results")
+    this.props.history.push("/results", { ...this.state})
 }
 
   render(){
