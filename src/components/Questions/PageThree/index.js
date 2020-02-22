@@ -1,16 +1,15 @@
 //Question One Is referring to type number 7
 import React, { Component } from 'react'
 import Rating from 'react-rating'
-import Cloud from '../assets/Clouds.png'
+import Cloud from '../../assets/Clouds.png'
 import { Progress } from 'reactstrap';
-import "./PageOne.css";
+import "./style.css";
 
 
-export default class PageOne extends Component
+export default class PageThree extends Component
 {
 
   state={
-      // Page one:
     Question1:1,
     Question2:1,
     Question3:1,
@@ -153,7 +152,7 @@ export default class PageOne extends Component
   }
 
   pushToSecondPage = () => {
-    this.props.history.push("/results")
+    this.props.history.push("/page_four")
 }
 
   render(){
@@ -261,7 +260,6 @@ export default class PageOne extends Component
           stop = {6}
           initialRating = {this.state.Question12}
         />
-
         {/* Question 13 */}
         <p className="questions">13. I can readily adjust to the demands of a new situation.
         </p>
