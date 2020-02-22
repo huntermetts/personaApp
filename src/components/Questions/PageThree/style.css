@@ -1,0 +1,68 @@
+Modal{
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.questions{
+    margin-top:30px;
+}
+
+.rating{
+    margin-top:-20px;
+    margin-left:10px;
+}
+
+.progressBar{
+    margin-top:85px;
+    margin-bottom: -60px;
+}
+
+.modalButtonCenter{
+    display: flex;
+    justify-content: center;
+}
+
+.modalBody{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    line-height: 32px;
+}
+
+.modalPersona{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 4px;
+}
+.stepOneButtonContainers{
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+    margin-bottom:75px;
+}
+
+/* ________________________________ */
+/* Ipad */
+@media(max-device-width : 768px)
+{
+    .progressBar{
+        margin-top:40px;
+    }
+
+    .backgroundContainer{
+        padding-bottom: 100px;
+    }
+}
+
+/* _________________________________ */
+/* Iphone */
+@media (min-width: 992px) {
+    .progressBar{
+        margin-top:40px;
+    }
+
+    .backgroundContainer{
+        padding-bottom: 100px;
+    }
+}

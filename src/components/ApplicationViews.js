@@ -3,6 +3,10 @@ import React, { Component } from "react";
 import Welcome from "./welcome/Welcome";
 import Summary from "./summary/Summary"
 import PageOne from "./Questions/PageOne"
+import PageTwo from './Questions/PageTwo'
+import PageThree from "./Questions/PageThree"
+import PageFour from './Questions/PageFour'
+import PageFive from './Questions/PageFive'
 import Results from "./Results/Results"
 
 export default class ApplicationViews extends Component {
@@ -72,13 +76,40 @@ export default class ApplicationViews extends Component {
         />
         {/* Route for page one of questions */}
         <Route
-          exact path="/pageOne" render={props => {
+          exact path="/page_one" render={props => {
             return <PageOne {...props}
                     handleFieldChange = {this.handleFieldChange}
                   />
           }}
         />
-
+        <Route
+          exact path="/page_two" render={props => {
+            return <PageTwo {...props}
+                    handleFieldChange = {this.handleFieldChange}
+                  />
+          }}
+        />
+        <Route
+          exact path="/page_three" render={props => {
+            return <PageThree {...props}
+                    handleFieldChange = {this.handleFieldChange}
+                  />
+          }}
+        />
+        <Route
+          exact path="/page_four" render={props => {
+            return <PageFour {...props}
+                    handleFieldChange = {this.handleFieldChange}
+                  />
+          }}
+        />
+        <Route
+          exact path="/page_five" render={props => {
+            return <PageFive {...props}
+                    handleFieldChange = {this.handleFieldChange}
+                  />
+          }}
+        />
          <Route
           exact path="/results" render={props => {
             return <Results {...props}

@@ -49,7 +49,7 @@ export default class Summary extends Component{
 
                 </ModalBody>
                 <ModalFooter className="modalButtonCenter">
-                    <Button color="dark" className="modalButton" onClick={() => this.props.history.push("/pageOne")}>Begin</Button>{' '}
+                    <Button color="dark" className="modalButton" onClick={() => this.props.history.push("/page_one")}>Begin</Button>{' '}
                 </ModalFooter>
                 </Modal>
 
