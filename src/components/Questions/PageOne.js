@@ -39,117 +39,117 @@ export default class PageOne extends Component
   //Will grab the state of the rate ex: 1-6
   handleRatingChange1 = (rating) => {
     this.setState({Question1:rating})
-    console.log(rating)
+    console.log("Question 1: " + rating)
   }
 
   handleRatingChange2 = (rating) => {
     this.setState({Question2:rating})
-    console.log(rating)
+    console.log("Question 2: " + rating)
   }
 
   handleRatingChange3 = (rating) => {
     this.setState({Question3:rating})
-    console.log(rating)
+    console.log("Question 3: " + rating)
   }
 
   handleRatingChange4 = (rating) => {
     this.setState({Question4:rating})
-    console.log(rating)
+    console.log("Question 4: " + rating)
   }
 
   handleRatingChange5 = (rating) => {
     this.setState({Question5:rating})
-    console.log(rating)
+    console.log("Question 5: " + rating)
   }
 
   handleRatingChange6 = (rating) => {
     this.setState({Question6:rating})
-    console.log(rating)
+    console.log("Question 6: " + rating)
   }
 
   handleRatingChange7 = (rating) => {
     this.setState({Question7:rating})
-    console.log(rating)
+    console.log("Question 7: " + rating)
   }
 
   handleRatingChange8 = (rating) => {
     this.setState({Question8:rating})
-    console.log(rating)
+    console.log("Question 8: " + rating)
   }
 
   handleRatingChange9 = (rating) => {
     this.setState({Question9:rating})
-    console.log(rating)
+    console.log("Question 9: " + rating)
   }
 
   handleRatingChange10 = (rating) => {
     this.setState({Question10:rating})
-    console.log(rating)
+    console.log("Question 10: " + rating)
   }
 
   handleRatingChange11 = (rating) => {
     this.setState({Question11:rating})
-    console.log(rating)
+    console.log("Question 11: " + rating)
   }
 
   handleRatingChange12 = (rating) => {
     this.setState({Question12:rating})
-    console.log(rating)
+    console.log("Question 12: " + rating)
   }
 
   handleRatingChange13 = (rating) => {
     this.setState({Question13:rating})
-    console.log(rating)
+    console.log("Question 13: " + rating)
   }
 
   handleRatingChange14 = (rating) => {
     this.setState({Question14:rating})
-    console.log(rating)
+    console.log("Question 14: " + rating)
   }
 
   handleRatingChange15 = (rating) => {
     this.setState({Question15:rating})
-    console.log(rating)
+    console.log("Question 15: " + rating)
   }
 
   handleRatingChange16 = (rating) => {
     this.setState({Question16:rating})
-    console.log(rating)
+    console.log("Question 16: " + rating)
   }
 
   handleRatingChange17 = (rating) => {
     this.setState({Question17:rating})
-    console.log(rating)
+    console.log("Question 17: " + rating)
   }
 
   handleRatingChange18 = (rating) => {
     this.setState({Question18:rating})
-    console.log(rating)
+    console.log("Question 18: " + rating)
   }
 
   handleRatingChange19 = (rating) => {
     this.setState({Question19:rating})
-    console.log(rating)
+    console.log("Question 19: " + rating)
   }
 
   handleRatingChange20 = (rating) => {
     this.setState({Question20:rating})
-    console.log(rating)
+    console.log("Question 20: " + rating)
   }
 
   handleRatingChange21 = (rating) => {
     this.setState({Question21:rating})
-    console.log(rating)
+    console.log("Question 21: " + rating)
   }
 
   handleRatingChange22 = (rating) => {
     this.setState({Question22:rating})
-    console.log(rating)
+    console.log("Question 22: " + rating)
   }
 
   handleRatingChange23 = (rating) => {
     this.setState({Question23:rating})
-    console.log(rating)
+    console.log("Question 23: " + rating)
   }
 
   pushToSecondPage = () => {
